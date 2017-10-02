@@ -3,7 +3,7 @@ const funcs = require('./app/funcs');
 
 rp('https://www.reddit.com/r/programming.json')
     .then(function(body) {
-        return funcs[0].execute({ day: "30", month: "september", year: "2017" }, body);
+        return funcs[0].execute(1504216800, body);
     })
     .then((res) => {
         console.log(res);
