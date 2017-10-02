@@ -1,6 +1,6 @@
 const rp = require('request-promise');
 
-var domains;
+var domains = [];
 var funcs = [{
     func: "getAllRedditDomainsFromDate",
     description: "Get all domains from JSON using date",
@@ -29,11 +29,10 @@ var funcs = [{
                         pageAfter = jsonParsed.data.after;
                         var dateTime = dateTime.getDate() + "/" + dateTime.getMonth() + "/" + dateTime.getFullYear();
 
-                        domains = idPost + " - " + "Page : " + pageAfter + " - " + domain + " - " + dateTime;
-                        console.log(domains);
+                        domains.push(idPost + " - " + "Page : " + pageAfter + " - " + domain + " - " + dateTime);
                     }
                 }
-
+                console.log(domains);
                 return callback(domains, pageAfter, false);
             })
             .catch(function(err) {
