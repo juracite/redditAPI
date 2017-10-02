@@ -1,0 +1,23 @@
+{
+  "name": "redditapi",
+  "version": "1.0.0",
+  "description": "Use the reddit API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juracite/redditAPI.git"
+  },
+  "keywords": [
+    "reddit",
+    "api"
+  ],
+  "author": "Yann LM",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juracite/redditAPI/issues"
+  },
+  "homepage": "https://github.com/juracite/redditAPI#readme"
+}
